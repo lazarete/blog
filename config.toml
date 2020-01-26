@@ -35,8 +35,8 @@ theme = "hello-friend-ng"
       logoHomeLink = "/"
     # or
     #
-     path = "/img/your-example-logo.svg"
-     alt = "home/lazarete~#"
+    # path = "/img/your-example-logo.svg"
+    # alt = "home/lazarete~#"
 
   # And you can even create generic menu
   [[menu.main]]
