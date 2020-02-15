@@ -7,6 +7,6 @@ coverImage: /images/uploads/preview-deploy.png
 ---
 ![terminal](/images/uploads/teste.png)
 
-\# Abra o terminal e vai!!!
+**\# Abra o terminal e vai!!!**
 
-Náo sei o que acontece com esse publicador que não funciona quando eu faço mues posts.
+> Náo sei o que acontece com esse publicador que não funciona quando eu faço mues posts.
