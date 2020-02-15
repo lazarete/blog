@@ -23,4 +23,4 @@ coverImage: ''
 ---
 ## Reduza custos e economize braço
 
-Você precisa de instâncias aws ligadas por algum periodo de tempo expecifico? Deseja reduzir custos com seu ambiente de DEV/QA ou até mesmo em PROD em casos especificos? Então esse processo simples de automação para ligar e desligar sua(s) instância(s) em determinados periodos pode ser muito útil no seu dia-a-dia.
+Você precisa de instâncias aws ligadas por algum periodo de tempo expecifico? Deseja reduzir custos com seu ambiente de DEV/QA ou até mesmo em PROD em casos especificos? Então esse processo simples de automação para ligar e desligar sua(s) instância(s) em determinados periodos pode ajudar a reduzir os custos da sua conta asw consideravelmente.
