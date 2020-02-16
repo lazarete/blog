@@ -52,7 +52,7 @@ Clique em **Create policy**
 
 ![null](/images/uploads/funcao-lambda-step-03.png)
 
-Na tela de **Create policy**, clique na guia **JSON**;
+Na tela **Create policy**, clique na guia **JSON**;
 
 ![null](/images/uploads/funcao-lambda-step-006.png)
 
