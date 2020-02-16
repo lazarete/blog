@@ -130,7 +130,7 @@ Repita esse procedimento para criar uma regra de **STOP** da instância. Copie o
 
 > **_Hora de realizar um teste para validar se tudo está funcionando conforme o esperado. Antes de iniciar os testes vamos fazer alguns ajustes lá no EC2, configurando as TAGs diretamente na nossa instância a ser atingida pela regra._**
 >
-> **17**. Vamos voltar para o Services e acessar o EC2
+>
 
 ![null](/images/uploads/services-ec2.png)
 
