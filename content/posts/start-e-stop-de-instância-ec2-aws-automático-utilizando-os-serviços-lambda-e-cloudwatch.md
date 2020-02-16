@@ -18,7 +18,7 @@ keywords:
   - cloudwatch
 autoThumbnailImage: true
 thumbnailImagePosition: top
-thumbnailImage: ''
+thumbnailImage: /images/uploads/structure.png
 coverImage: /images/uploads/structure.png
 ---
 ## 
