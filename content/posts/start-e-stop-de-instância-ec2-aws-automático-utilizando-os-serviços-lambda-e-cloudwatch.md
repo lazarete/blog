@@ -19,7 +19,7 @@ keywords:
 autoThumbnailImage: false
 thumbnailImagePosition: top
 thumbnailImage: ''
-coverImage: ''
+coverImage: /images/uploads/structure.png
 ---
 ## Reduza custos e economize braço
 
