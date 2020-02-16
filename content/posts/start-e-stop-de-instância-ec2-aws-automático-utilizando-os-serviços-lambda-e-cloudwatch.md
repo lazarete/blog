@@ -60,7 +60,7 @@ Então bora lá para configuração das Rules e Functions necessárias para impl
 
 ![null](/images/uploads/funcao-lambda-step-04.png)
 
-8. **I**nsira um nome e a descrição para sua política, por exemplo: **start-stop-ec2-instance**; em seguida clique em **Create policy**
+8. Insira um nome e a descrição para sua política, por exemplo: **start-stop-ec2-instance**; em seguida clique em **Create policy**
 
 ![null](/images/uploads/funcao-lambda-step-008.png)
 
@@ -72,7 +72,7 @@ Então bora lá para configuração das Rules e Functions necessárias para impl
 
 > > **IMPORTANTE**
 > >
-> > **_No momento em que clicar em Create policy uma nova aba será aberta no navegador para criação da nova policy. Assim que terminar o processo e visualizar a mensagem acima, você deve fechar a aba  Create policy  voltar a aba anterior Create role para continuar o processo._**
+> > _**No momento em que clicar em Create policy uma nova aba será aberta no navegador para criação da nova policy. Assim que terminar o processo e visualizar a mensagem acima, você deve fechar a aba  Create policy  voltar a aba anterior Create role para continuar o processo.**_
 >
 > Siga as etapas:
 >
@@ -93,8 +93,6 @@ Então bora lá para configuração das Rules e Functions necessárias para impl
 ![null](/images/uploads/funcao-lambda-step-10.png)
 
 Sucesso! A primeira etapa de criação de regras e políticas no **IAM** foi finalizada. Agora vamos criar as funções no **Lambda**.
-
-
 
 ## Services Lambda
 
@@ -132,7 +130,7 @@ Confirme se as opções **Code entry type**, **python 3.8 **e **Handler** estão
 
 18. Repita esse procedimento para criar uma regra de **STOP** da instância. Copie o script do repositório git ([stop-instance.py](https://github.com/lazarete/aws-lambda-start-stop-ec2/blob/master/stop-instance.py)) substitua pelo código no **lambda_function.py.**
 
-> **_Hora de realizar um teste para validar se tudo está funcionando conforme o esperado. Antes de iniciar os testes vamos fazer alguns ajustes lá no EC2, configurando as TAGs diretamente na nossa instância a ser atingida pela regra._**
+> _**Hora de realizar um teste para validar se tudo está funcionando conforme o esperado. Antes de iniciar os testes vamos fazer alguns ajustes lá no EC2, configurando as TAGs diretamente na nossa instância a ser atingida pela regra.**_
 
 19. Vamos voltar para o Services e acessar o EC2
 
@@ -190,13 +188,13 @@ Com as regras e funções devidamente configuradas e testadas, podemos passar pa
 
 Em **Event Source** marque os campos **Schedule**, **Cron expression** e preencha com a expressão **01 12 ? \* MON-FRI \***
 
-_**No exemplo abaixo vamos iniciar a instância as 9 horas da manhã e desligar as 18 da tarde.**_
+**_No exemplo abaixo vamos iniciar a instância as 9 horas da manhã e desligar as 18 da tarde._**
 
 30. A direita do painel em  **Targets** em **functions** selecione o nome da função **startinstance** e clique em **Configure details**
 
-> **_IMPORTANTE_**
+> _**IMPORTANTE**_
 >
-> **_O CloudWatch usa o padrão de hora UTC-0. Então para configurar o horário considere 3 horas a mais. No exemplo abaixo, vamos iniciar a instância as 09:01Horas, logo a a expressão 01 12._**
+> _**O CloudWatch usa o padrão de hora UTC-0. Então para configurar o horário considere 3 horas a mais. No exemplo abaixo, vamos iniciar a instância as 09:01Horas, logo a a expressão 01 12.**_
 
 ![null](/images/uploads/create-rule-cloudwatch-step-1.png)
 
