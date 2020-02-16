@@ -36,7 +36,7 @@ No exemplo utilizamos a região **US East (N.Virginia)**
 
 ![null](/images/uploads/funcao-lambda-step-002.png)
 
-Acesse no painel o**AWS Services**, e pesquise por**IAM**
+Acesse no painel o **AWS Services**, e pesquise por **IAM**
 
 ![null](/images/uploads/funcao-lambda-step-001.png)
 
@@ -128,7 +128,7 @@ Salve as alterações
 
 Repita esse procedimento para criar uma regra de **STOP** da instância. Copie o script do repositório git ([stop-instance.py](https://github.com/lazarete/aws-lambda-start-stop-ec2/blob/master/stop-instance.py)) substitua pelo código no **lambda_function.py.**
 
-> **_Hora de realizar um teste para validar se tudo está funcionando conforme o esperado. Antes de iniciar os testes vamos fazer alguns ajustes lá no EC2, configurando as TAGs diretamente na nossa instância a ser atingida pela regra._**
+> _**Hora de realizar um teste para validar se tudo está funcionando conforme o esperado. Antes de iniciar os testes vamos fazer alguns ajustes lá no EC2, configurando as TAGs diretamente na nossa instância a ser atingida pela regra.**_
 >
 > **Vamos voltar para o Services e acessar o EC2**
 
@@ -184,9 +184,9 @@ Em **Event Source** marque os campos **Schedule**, **Cron expression** e preench
 
 No **Targets** em **Lambda** **functions** selecione o nome da função **startinstance** e clique em **Configure details**
 
-> _**IMPORTANTE**_
+> **_IMPORTANTE_**
 >
-> _**O CloudWatch usa o padrão de hora UTC-0. Então para configurar o horário considere 3 horas a mais. No exemplo abaixo, vamos iniciar a instância as 09:01Horas, logo a a expressão 01 12.**_
+> **_O CloudWatch usa o padrão de hora UTC-0. Então para configurar o horário considere 3 horas a mais. No exemplo abaixo, vamos iniciar a instância as 09:01Horas, logo a a expressão 01 12._**
 
 ![null](/images/uploads/create-rule-cloudwatch-step-1.png)
 
