@@ -40,7 +40,7 @@ Acesse no painel o **AWS Services**, e pesquise por **IAM**
 
 ![null](/images/uploads/funcao-lambda-step-001.png)
 
-Localize **Rules** a esquerda do painel em seguida em clique **Create role**
+Localize **Rules** a esquerda do painel em seguida clique em **Create role**
 
 ![null](/images/uploads/funcao-lambda-step-003.png)
 
