@@ -34,9 +34,9 @@ Acesse a console da sua conta no **AWS**\
 Selecione a região onde a instancia está localizada\
 No exemplo utilizamos a região **US East (N.Virginia)**
 
-![null](/images/uploads/funcao-lambda-step-002.png)
 
-**1. **Acesse no painel o **AWS Services**, e pesquise por **IAM**
+
+![Aws Management Console](/images/uploads/funcao-lambda-step-002.png)
 
 ![null](/images/uploads/funcao-lambda-step-001.png)
 
