@@ -128,7 +128,7 @@ Confirme se as opções **Code entry type**, **python 3.8 **e **Handler** estão
 
 > _**Hora de realizar um teste para validar se tudo está funcionando conforme o esperado. Antes de iniciar os testes vamos fazer alguns ajustes lá no EC2, configurando as TAGs diretamente na nossa instância a ser atingida pela regra.**_
 
-18._** **_Vamos voltar para o Services e acessar o EC2
+18. Vamos voltar para o Services e acessar o EC2
 
 ![null](/images/uploads/services-ec2.png)
 
