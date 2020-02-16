@@ -16,7 +16,7 @@ keywords:
   - stop
   - lambda
   - cloudwatch
-autoThumbnailImage: false
+autoThumbnailImage: true
 thumbnailImagePosition: top
 thumbnailImage: ''
 coverImage: /images/uploads/structure.png
