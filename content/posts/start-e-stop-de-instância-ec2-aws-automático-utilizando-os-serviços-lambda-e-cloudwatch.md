@@ -129,20 +129,74 @@ Salve as alterações
 
 Repita esse procedimento para criar uma regra de **STOP** da instância. Copie o script do repositório git ([stop-instance.py](https://github.com/lazarete/aws-lambda-start-stop-ec2/blob/master/stop-instance.py)) substitua pelo código no **lambda_function.py.**
 
-> _**Hora de realizar um teste para validar se tudo está funcionando conforme o esperado. Antes de iniciar os testes vamos fazer alguns ajustes lá no EC2, configurando as TAGs diretamente na nossa instância a ser atingida pela regra.**_
+> **_Hora de realizar um teste para validar se tudo está funcionando conforme o esperado. Antes de iniciar os testes vamos fazer alguns ajustes lá no EC2, configurando as TAGs diretamente na nossa instância a ser atingida pela regra._**
 >
 > >
 
 **Vamos voltar para o Services e acessar o EC2**
 
-![](/images/uploads/services-ec2.png)
+![null](/images/uploads/services-ec2.png)
 
 No lado esquerdo do painel, localize e acesse **Instance**
 
-![](/images/uploads/instances.png)
+![null](/images/uploads/instances.png)
 
 Configure as **Tags **referente que foram passadas nos scripts python
 
-![](/images/uploads/add-tags.png)
+![null](/images/uploads/add-tags.png)
 
 Retorne ao **Services Lambda**. Selecione a função que deseja testar e em seguida clique em **Actions**, e selecione **Test**
+
+![null](/images/uploads/teste-stop.png)
+
+Na tela **Configure test event**, selecione **Create new test event**.  Digite um nome para o evento em **Event name** e clique em Create
+
+![null](/images/uploads/stop-test.png)
+
+![null](/images/uploads/stop-test-1.png)
+
+A próxima tela retornará uma mensagem de sucesso sobre a criação da função **stopinstance**. Agora execute o teste
+
+![null](/images/uploads/execute-teste.png)
+
+Verifique o log após a sua execução
+
+![null](/images/uploads/log.png)
+
+Agora verifique o status da instância
+
+![null](/images/uploads/stopping.png)
+
+Com as regras e funções devidamente configuradas e testadas, podemos passar para parte final que é a configuração do scheduler, que fará a execução das novas regras e funções de acordo com a necessidade de utilização.
+
+Acesse novamente o menu **Services**, e no campo de busca digite o nome do serviço **CloudWatch**
+
+![null](/images/uploads/service-cloudwatch.png)
+
+Acessando o **CloudWatch**, localize no lado esquerdo **Rules** e clique nele
+
+![null](/images/uploads/rule-cloudwatch.png)
+
+Na próxima tela, clique em **Create rule**
+
+![null](/images/uploads/create-rule-cloudwatch.png)
+
+No **Step 1** de configuração da **Rule** do **CloudWatch** siga as etapas abaixo:
+
+Em **Event Source** marque os campos **Schedule**, **Cron expression** e preencha com a expressão **01 12 ? \* MON-FRI \***
+
+No **Targets** em **Lambda** **functions** selecione o nome da função **startinstance** e clique em **Configure details**
+
+> _**IMPORTANTE**_
+>
+> _**O CloudWatch usa o padrão de hora UTC-0. Então para configurar o horário considere 3 horas a mais. No exemplo abaixo, vamos iniciar a instância as 09:01Horas, logo a a expressão 01 12.**_
+
+![null](/images/uploads/create-rule-cloudwatch-step-1.png)
+
+No **Step 2 Configure rule details**, digite o nome da **Rule definition**. **Name: Start Instance**, **Description**: forneça uma descrição sobre a regra. Verifique se o campo State está marcado como **Enabled** e clique em **Create rule**.
+
+![](/images/uploads/create-rule-cloudwatch-step-2.png)
+
+A próxima tela informa que a rule foi criada com sucesso.
+
+![](/images/uploads/rule-cloudwatch-success.png)
