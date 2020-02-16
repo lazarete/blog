@@ -200,3 +200,5 @@ No **Step 2 Configure rule details**, digite o nome da **Rule definition**. **Na
 A próxima tela informa que a rule foi criada com sucesso.
 
 ![](/images/uploads/rule-cloudwatch-success.png)
+
+Refaça o Step 2 **Configure rule details** para criar a **rule de Stop**.
