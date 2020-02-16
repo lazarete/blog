@@ -52,11 +52,11 @@ No exemplo utilizamos a região **US East (N.Virginia)**
 
 ![null](/images/uploads/funcao-lambda-step-03.png)
 
-4. Na tela **Create policy**, clique na guia **JSON**;
+5. Na tela **Create policy**, clique na guia **JSON**;
 
 ![null](/images/uploads/funcao-lambda-step-006.png)
 
-5. Apague o conteúdo existente, e cole o código disponibilizado no [GitHub](https://github.com/lazarete/aws-lambda-start-stop-ec2/blob/master/iam-role-start-stop-instance-ec2.json)
+6. Apague o conteúdo existente, e cole o código disponibilizado no [GitHub](https://github.com/lazarete/aws-lambda-start-stop-ec2/blob/master/iam-role-start-stop-instance-ec2.json)
 
 ![null](/images/uploads/funcao-lambda-step-04.png)
 
