@@ -21,6 +21,8 @@ thumbnailImagePosition: top
 thumbnailImage: ''
 coverImage: /images/uploads/structure.png
 ---
+## 
+
 ## Reduza custos e economize braço
 
 Você precisa de instâncias aws ligadas por algum periodo de tempo expecifico? Deseja reduzir custos com seu ambiente de DEV/QA ou até mesmo em PROD em casos especificos? Então esse processo simples de automação para ligar e desligar sua(s) instância(s) em determinados periodos pode ajudar a reduzir os custos da sua conta asw consideravelmente.\
@@ -124,3 +126,23 @@ Rolando um pouco mais a página, faça a edição do** Basic setings**
 Salve as alterações
 
 ![null](/images/uploads/lambda-step-06.png)
+
+Repita esse procedimento para criar uma regra de **STOP** da instância. Copie o script do repositório git ([stop-instance.py](https://github.com/lazarete/aws-lambda-start-stop-ec2/blob/master/stop-instance.py)) substitua pelo código no **lambda_function.py.**
+
+> _**Hora de realizar um teste para validar se tudo está funcionando conforme o esperado. Antes de iniciar os testes vamos fazer alguns ajustes lá no EC2, configurando as TAGs diretamente na nossa instância a ser atingida pela regra.**_
+>
+> >
+
+**Vamos voltar para o Services e acessar o EC2**
+
+![](/images/uploads/services-ec2.png)
+
+No lado esquerdo do painel, localize e acesse **Instance**
+
+![](/images/uploads/instances.png)
+
+Configure as **Tags **referente que foram passadas nos scripts python
+
+![](/images/uploads/add-tags.png)
+
+Retorne ao **Services Lambda**. Selecione a função que deseja testar e em seguida clique em **Actions**, e selecione **Test**
