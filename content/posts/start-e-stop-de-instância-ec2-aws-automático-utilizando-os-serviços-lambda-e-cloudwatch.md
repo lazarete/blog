@@ -31,8 +31,8 @@ Então bora lá para configuração das Rules e Functions necessárias para impl
 ## Criando a regra no IAM
 
 1. Acesse a console da sua conta no **AWS**\
-Selecione a região onde a instancia está localizada\
-No exemplo utilizamos a região **US East (N.Virginia)**
+   Selecione a região onde a instancia está localizada\
+   No exemplo utilizamos a região **US East (N.Virginia)**
 
 ![Aws Management Console](/images/uploads/funcao-lambda-step-002.png)
 
@@ -54,7 +54,7 @@ No exemplo utilizamos a região **US East (N.Virginia)**
 
 ![null](/images/uploads/funcao-lambda-step-006.png)
 
-**6 - ** Apague o conteúdo existente, e cole o código disponibilizado no [GitHub](https://github.com/lazarete/aws-lambda-start-stop-ec2/blob/master/iam-role-start-stop-instance-ec2.json)
+6. Apague o conteúdo existente, e cole o código disponibilizado no [GitHub](https://github.com/lazarete/aws-lambda-start-stop-ec2/blob/master/iam-role-start-stop-instance-ec2.json)
 
 ![null](/images/uploads/funcao-lambda-step-04.png)
 
@@ -86,7 +86,7 @@ No exemplo utilizamos a região **US East (N.Virginia)**
 ![null](/images/uploads/funcao-lambda-step-09.png)
 
 10. Na tela de **Create role Review** digite o nome para regra como a do exemplo: **start-stop-ec2-instance**\
-Faça uma breve descrição e clique em **Create role**
+    Faça uma breve descrição e clique em **Create role**
 
 ![null](/images/uploads/funcao-lambda-step-10.png)
 
@@ -126,7 +126,7 @@ Confirme se as opções **Code entry type**, **python 3.8 **e **Handler** estão
 
 Repita esse procedimento para criar uma regra de **STOP** da instância. Copie o script do repositório git ([stop-instance.py](https://github.com/lazarete/aws-lambda-start-stop-ec2/blob/master/stop-instance.py)) substitua pelo código no **lambda_function.py.**
 
-> _**Hora de realizar um teste para validar se tudo está funcionando conforme o esperado. Antes de iniciar os testes vamos fazer alguns ajustes lá no EC2, configurando as TAGs diretamente na nossa instância a ser atingida pela regra.**_
+> **_Hora de realizar um teste para validar se tudo está funcionando conforme o esperado. Antes de iniciar os testes vamos fazer alguns ajustes lá no EC2, configurando as TAGs diretamente na nossa instância a ser atingida pela regra._**
 
 17. Vamos voltar para o Services e acessar o EC2
 
@@ -182,9 +182,9 @@ Em **Event Source** marque os campos **Schedule**, **Cron expression** e preench
 
 28. No **Targets** em **Lambda** **functions** selecione o nome da função **startinstance** e clique em **Configure details**
 
-> _**IMPORTANTE**_
+> **_IMPORTANTE_**
 >
-> _**O CloudWatch usa o padrão de hora UTC-0. Então para configurar o horário considere 3 horas a mais. No exemplo abaixo, vamos iniciar a instância as 09:01Horas, logo a a expressão 01 12.**_
+> **_O CloudWatch usa o padrão de hora UTC-0. Então para configurar o horário considere 3 horas a mais. No exemplo abaixo, vamos iniciar a instância as 09:01Horas, logo a a expressão 01 12._**
 
 ![null](/images/uploads/create-rule-cloudwatch-step-1.png)
 
@@ -196,4 +196,4 @@ A próxima tela informa que a rule foi criada com sucesso.
 
 ![null](/images/uploads/rule-cloudwatch-success.png)
 
-30.** **Refaça o **Step 2** **Configure rule details** para criar a **rule de Stop**.
+30.\*\* **Refaça o **Step 2\*\* **Configure rule details** para criar a **rule de Stop**.
