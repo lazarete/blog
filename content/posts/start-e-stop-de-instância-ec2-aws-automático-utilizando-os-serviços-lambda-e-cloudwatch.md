@@ -18,7 +18,7 @@ keywords:
   - cloudwatch
 autoThumbnailImage: false
 thumbnailImagePosition: top
-thumbnailImage: /images/uploads/structure.png
+thumbnailImage: ''
 coverImage: ''
 ---
 ## Reduza custos e economize braço
@@ -91,6 +91,36 @@ Faça uma breve descrição e clique em **Create role**
 
 ![null](/images/uploads/funcao-lambda-step-10.png)
 
-
-
 Sucesso! A primeira etapa de criação de regras e políticas no **IAM** foi finalizada. Agora vamos criar as funções no **Lambda**.
+
+Acesse o **Services** e pesquise pelo serviço **Lambda**. Clique para acessar o **Dashboard**
+
+![null](/images/uploads/lambda-step-01.png)
+
+Vamos criar as funções que serão responsáveis pelo **start** e **stop** da(s) instância(s). Clique em **Create function**
+
+![null](/images/uploads/lambda-step-02.png)
+
+Siga as etapas abaixo:
+
+![null](/images/uploads/lambda-step-03.png)
+
+![null](/images/uploads/lambda-step-03.1.png)
+
+A seguir será informado que a função foi criada com sucesso
+
+![null](/images/uploads/lambda-step-04.png)
+
+Role a tela para acessar o código da função;
+
+Confirme se as opções **Code entry type**, **python 3.8 **e **Handler** estão devidamente selecionadas. Acesse o script no repositório [git](https://github.com/lazarete/aws-lambda-start-stop-ec2) ([start-instance.py](https://github.com/lazarete/aws-lambda-start-stop-ec2/blob/master/start-instance.py) ) copie o código e substitua no arquivo **lambda_function.py** conforme a imagem
+
+![null](/images/uploads/lambda-step-05.png)
+
+Rolando um pouco mais a página, faça a edição do** Basic setings**
+
+![null](/images/uploads/lambda-step-07.png)
+
+Salve as alterações
+
+![null](/images/uploads/lambda-step-06.png)
