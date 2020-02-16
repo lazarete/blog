@@ -180,7 +180,7 @@ Com as regras e funções devidamente configuradas e testadas, podemos passar pa
 
 Em **Event Source** marque os campos **Schedule**, **Cron expression** e preencha com a expressão **01 12 ? \* MON-FRI \***
 
-29.** **No **Targets** em **Lambda** **functions** selecione o nome da função **startinstance** e clique em **Configure details**
+29. No **Targets** em **Lambda** **functions** selecione o nome da função **startinstance** e clique em **Configure details**
 
 > _**IMPORTANTE**_
 >
@@ -197,3 +197,16 @@ A próxima tela informa que a rule foi criada com sucesso.
 ![null](/images/uploads/rule-cloudwatch-success.png)
 
 31. Refaça o** Step 2 Configure rule details** para criar a **rule de Stop**.
+
+
+
+## **Referências:**
+
+\
+[Schedule AWS Lambda Functions Using CloudWatch Events](https://docs.aws.amazon.com/AmazonCloudWatch/latest/events/RunLambdaSchedule.html)\
+[CloudWatch Events Event Examples From Supported Services](https://docs.aws.amazon.com/AmazonCloudWatch/latest/events/EventTypes.html)\
+[Adding Stop Actions to Amazon CloudWatch Alarms](https://docs.aws.amazon.com/pt_br/AmazonCloudWatch/latest/monitoring/UsingAlarmActions.html#AddingStopActions)
+
+## 
+
+##
