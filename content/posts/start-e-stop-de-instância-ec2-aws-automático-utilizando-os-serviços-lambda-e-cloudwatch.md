@@ -46,7 +46,7 @@ No exemplo utilizamos a região **US East (N.Virginia)**
 
 **3.** Na próxima tela selecione **AWS Service**, escolha o serviço **Lambda**, e na sequência clique em **Next: Permission**
 
-![null](/images/uploads/funcao-lambda-step-02.1.png)
+![Identity and Access Management (IAM)](/images/uploads/funcao-lambda-step-02.1.png)
 
 **4.** Clique em **Create policy**
 
