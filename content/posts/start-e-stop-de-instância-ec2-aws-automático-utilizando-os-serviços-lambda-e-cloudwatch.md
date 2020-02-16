@@ -36,27 +36,27 @@ No exemplo utilizamos a região **US East (N.Virginia)**
 
 ![null](/images/uploads/funcao-lambda-step-002.png)
 
-Acesse no painel o **AWS Services**, e pesquise por **IAM**
+1. Acesse no painel o **AWS Services**, e pesquise por **IAM**
 
 ![null](/images/uploads/funcao-lambda-step-001.png)
 
-Localize **Rules** a esquerda do painel em seguida clique em **Create role**
+  2. Localize **Rules** a esquerda do painel em seguida clique em **Create role**
 
 ![null](/images/uploads/funcao-lambda-step-003.png)
 
-Na próxima tela selecione **AWS Service**, escolha o serviço **Lambda**, e na sequência clique em **Next: Permission**
+3. Na próxima tela selecione **AWS Service**, escolha o serviço **Lambda**, e na sequência clique em **Next: Permission**
 
 ![null](/images/uploads/funcao-lambda-step-02.1.png)
 
-Clique em **Create policy**
+4. Clique em **Create policy**
 
 ![null](/images/uploads/funcao-lambda-step-03.png)
 
-Na tela **Create policy**, clique na guia **JSON**;
+4. Na tela **Create policy**, clique na guia **JSON**;
 
 ![null](/images/uploads/funcao-lambda-step-006.png)
 
-Apague o conteúdo existente, e cole o código disponibilizado no [GitHub](https://github.com/lazarete/aws-lambda-start-stop-ec2/blob/master/iam-role-start-stop-instance-ec2.json)
+5. Apague o conteúdo existente, e cole o código disponibilizado no [GitHub](https://github.com/lazarete/aws-lambda-start-stop-ec2/blob/master/iam-role-start-stop-instance-ec2.json)
 
 ![null](/images/uploads/funcao-lambda-step-04.png)
 
